@@ -1,6 +1,6 @@
 language: csharp
 mono: latest
-dotnet: 2.1.4
+dotnet: 2.1.402
 dist: trusty
 script:
 - dotnet msbuild NetTopologySuite.sln /m "/t:Restore;Build" /p:Configuration=Release "/p:FrameworkPathOverride=$(dirname $(which mono))/../lib/mono/4.5/" /v:minimal /p:WarningLevel=3
